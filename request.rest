@@ -1,7 +1,11 @@
 GET http://localhost:5000
 
 ###
-POST http://localhost:5000/login
+POST http://localhost:5000/users
+Content-Type: application/json
 
-###
-GET http://localhost:5000/logout
+{
+    "name": "lebron james",
+    "email": "lebron@gmail.com",
+    "password": "password1234"
+}

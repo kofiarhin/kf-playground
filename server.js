@@ -27,6 +27,7 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+// create user
 app.post("/users", async (req, res) => {
   const { name, email, password } = req.body;
 
@@ -36,6 +37,8 @@ app.post("/users", async (req, res) => {
       email,
       password,
     });
+    await user.save();
+    console.log("user created");
     res.json(user);
   } catch (error) {
     console.log(error.message);
