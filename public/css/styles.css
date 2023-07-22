@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+.form-wrapper {
+    widtH: 540px;
+    max-width: 90%;
+    margin: 8rem auto;
+}
+
+.form-wrapper form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+.form-wrapper form button {
+    display: block;
+    padding: 1rem 0rem;
+    background-color: black;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
